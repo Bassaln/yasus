@@ -1,0 +1,52 @@
+<!--
+---
+layout: default
+title: My Blog
+---
+<h2>{{ page.title }}</h2>
+<p>最新文章</p>
+<ul>
+　{% for post in site.posts %}
+　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　{% endfor %}
+</ul>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barcelona</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		#white-word{
+			color: #FFF；
+		}
+	</style>
+</head>
+<body>
+<center><h2><div id="white-word">My Blog</div></h2></center>
+<p><div id="white-word">本地链接</div></p>
+<ul>
+<li><a href=http://127.0.0.1/book>DESIGN TEARDOWNS</a></li>
+<li><a href=http://127.0.0.1/images>Images</a></li>
+<!--<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>-->
+</ul>
+
+<p><div id="white-word">网络链接</div></p>
+<ul>
+<li><a href=https://cocoapods.org>Cocoapods</a></li>
+<li><a href=http://stackoverflow.com>stackoverflow</a></li>
+<li><a href=https://realm.io/docs/swift/latest/>Realm Swift</a></li>
+<li><a href=https://leancloud.cn/applist.html#/apps>LeanCloud</a></li>
+<li><a href=https://swift.org/about/#swiftorg-and-open-source>swift.org</a></li>
+</ul>
+<!--音乐-->
+<audio src="一直很安静.mp3" controls="controls" width=100%></audio>
+<!--视频
+<video width="320" height="240"
+         controls>
+    <source src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-1/ollie.mp4">
+  </video>
+ -->
+</body>
+</html>

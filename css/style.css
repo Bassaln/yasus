@@ -1,0 +1,21 @@
+body{
+	background: url('../images/bsln.jpg') fixed center center no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	color: #666;
+}
+
+a:hover{
+	color: #F00;
+}
+
+ul,ol{
+	list-style-type: none;
+}
