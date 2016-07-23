@@ -18,10 +18,13 @@
     //     document.getElementById('mytime').innerHTML=myDate();
     // }
     // window.onload=updateTime;
-    $(document).ready(function(){
+    function updateTime(){
       $("#mytime").text(myDate());
+    }
+    $(document).ready(function(){
+        setInterval("updateTime()",1000);
     });
-    setInterval("updateTime()",1000);
+
 
 </script>
   <body>
