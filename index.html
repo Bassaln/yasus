@@ -9,9 +9,21 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
+
+  <script type="text/javascript" src="Inc/myDate.js"></script>
+
+  <script type="text/javascript">
+    function updateTime(){
+        document.getElementById('mytime').innerHTML=myDate();
+    }
+    window.onload=updateTime;
+    setInterval("updateTime()",1000);
+
+</script>
   <body>
     <section class="page-header">
       <h1 class="project-name">Bassaln.GitHub.io</h1>
+      <h1 id="mytime">当前时间：2016年7月23日 8:30:00</h1>
       <h2 class="project-tagline"></h2>
     </section>
 
