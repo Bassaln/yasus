@@ -32,11 +32,11 @@
     }
     function updateTime(){
       $("#mytime").text(myDate());
-      $(".page-header").css("background-image","linear-gradient(120deg, "+getRandomColor()+","+getRandomColor()+")");
       //$color=getRandomColor();
     }
     $(document).ready(function(){
         setInterval("updateTime()",1000);
+        $(".page-header").css("background-image","linear-gradient(120deg, "+getRandomColor()+","+getRandomColor()+")");
     });
 
 
