@@ -11,12 +11,16 @@
   </head>
 
   <script type="text/javascript" src="Inc/myDate.js"></script>
+  <script type="text/javascript" src="Inc/jquery-3.1.0.min.js"></script>
 
   <script type="text/javascript">
-    function updateTime(){
-        document.getElementById('mytime').innerHTML=myDate();
-    }
-    window.onload=updateTime;
+    // function updateTime(){
+    //     document.getElementById('mytime').innerHTML=myDate();
+    // }
+    // window.onload=updateTime;
+    $(document).ready(function(){
+      $("#mytime").text(myDate());
+    });
     setInterval("updateTime()",1000);
 
 </script>
